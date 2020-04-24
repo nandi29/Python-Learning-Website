@@ -225,8 +225,41 @@ Any programming language that lacks side effects(example: a function might modif
 	</p>	
 	<a href="https://en.wikipedia.org/wiki/Imperative_programming" class="design-name" target="_blank">Imperative Programming Paradigm</a>
 	                                                                       <li>
+										    <h4>Parallel Programming Paradigm</h4>   
+					</li>
+<p>Parallel programming model is an abstraction of parallel computer architecture, with which it is convenient to express algorithms and their composition in programs. The value of a programming model can be judged on its generality: how well a range of different problems can be expressed for a variety of different architectures, and its performance: how efficiently the compiled programs can execute.The implementation of a parallel programming model can take the form of a library invoked from a sequential language, as an extension to an existing language, or as an entirely new language.</p>
+<p>Consensus around a particular programming model is important because it leads to different parallel computers being built with support for the model, thereby facilitating portability of software. In this sense, programming models are referred to as bridging between hardware and software.</p>
+
+<p>A system is said to be parallel if it can support two or more actions executing simultaneously i.e., <mark>multiple actions are simultaneously executed in parallel systems</mark>.</p>
+<p>The evolution of parallel processing, even if slow, gave rise to a considerable variety of programming paradigms.</p>
+<mark>Parallelism Types:</mark>
+<p>1.Explicit Parallelism</p>
+<p>2.Implicit Parallelism</p>
+
+<p><mark>Explicit parallelism</mark>:</p>
+<p>Explicit Parallelism is characterized by the presence of explicit constructs in the programming language, aimed at describing (to a certain degree of detail) the way in which the parallel computation will take place.</p>
+<p>A wide range of solutions exists within this framework. One extreme is represented by the ``ancient'' use of basic, low level mechanisms to deal with parallelism--like fork/join primitives, semaphores, etc--eventually added to existing programming languages. Although this allows the highest degree of flexibility (any form of parallel control can be implemented in terms of the basic low level primitives gif), it leaves the additional layer of complexity completely on the shoulders of the programmer, making his task extremely complicate.</p>
+
+<p><mark>Implicit Parallelism</mark>:</p>
+<p>Allows programmers to write their programs without any concern about the exploitation of parallelism. Exploitation of parallelism is instead automatically performed by the compiler and/or the runtime system. In this way the parallelism is transparent to the programmer maintaining the complexity of software development at the same level of standard sequential programming.</p>
+<p>Extracting parallelism implicitly is not an easy task. For imperative programming languages, the complexity of the problem is almost prohibitively and allows positive results only for restricted sets of applications (e.g., applications which perform intensive operations on arrays.</p>
+<p>Declarative Programming languages, and in particular Functional and Logic languages, are characterized by a very high level of abstraction, allowing the programmer to focus on what the problem is and leaving implicit many details of how the problem should be solved.</p>
+<p>Declarative languages have opened new doors to automatic exploitation of parallelism. Their focusing on a high level description of the problem and their mathematical nature turned into positive properties for implicit exploitation of parallelism.</p>
+
+<p><mark>Methods for parallelism</mark>:</p>
+<p>There are many methods of programming parallel computers. Two of the most common are message passing and data parallel.</p>
+<p>1.Message Passing - the user makes calls to libraries to explicitly share information between processors.</p>
+<p>2.Data Parallel - data partitioning determines parallelism</p>
+<p>3.Shared Memory - multiple processes sharing common memory space</p>
+<p>4.Remote Memory Operation - set of processes in which a process can access the memory of another process without its participation</p>
+<p>5.Threads - a single process having multiple (concurrent) execution paths</p>
+<p>6.Combined Models - composed of two or more of the above.</p>
+		
+		<p>for reference-
+	</p>
 						<a href="https://en.wikipedia.org/wiki/Parallel_programming_model" class="design-name" target="_blank">Parallel Programming Paradigm</a>
-					</li>					<li>
+		
+		                                                               <li>
 						<a href="https://en.wikipedia.org/wiki/Concurrent_computing" class="design-name" target="_blank">Concurrent Programming Paradigm</a>
 					</li>			
 		<li>
