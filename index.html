@@ -260,8 +260,44 @@ Any programming language that lacks side effects(example: a function might modif
 						<a href="https://en.wikipedia.org/wiki/Parallel_programming_model" class="design-name" target="_blank">Parallel Programming Paradigm</a>
 		
 		                                                               <li>
-						<a href="https://en.wikipedia.org/wiki/Concurrent_computing" class="design-name" target="_blank">Concurrent Programming Paradigm</a>
-					</li>			
+						<h4>Concurrent Programming Paradigm</h4>
+					</li>
+		<p>Concurrent computing is a form of computing in which several computations are executed concurrently—during overlapping time periods—instead of sequentially, with one completing before the next starts.
+This is a property of a system—whether a program, computer, or a network—where there is a separate execution point or "thread of control" for each process. A concurrent system is one where a computation can advance without waiting for all other computations to complete.
+Concurrent computing is a form of modular programming. In its paradigm an overall computation is factored into subcomputations that may be executed concurrently.
+Concurrent computations may be executed in parallel,[2][5] for example, by assigning each process to a separate processor or processor core, or distributing a computation across a network. In general, however, the languages, tools, and techniques for parallel programming might not be suitable for concurrent programming, and vice versa
+Some important points:
+Computing systems model the world, and the world contains actors that execute independently of, but communicate with, each other. In modelling the world, many (possibly) parallel executions have to be composed and coordinated, and that's where the study of concurrency comes in.
+There are two common models for concurrent programming: shared memory and message passing.
+Shared memory: In the shared memory model of concurrency, concurrent modules interact by reading and writing shared objects in memory.
+Message passing: In the message-passing model, concurrent modules interact by sending messages to each other through a communication channel. Modules send off messages, and incoming messages to each module are queued up for handling.
+
+Issues Concurrent Programming Paradigm :-
+
+Concurrent programming is programming with multiple tasks. The major issues of concurrent programming are:
+Sharing computational resources between the tasks;
+Interaction of the tasks.
+
+Objects shared by multiple tasks have to be safe for concurrent access. Such objects are called protected. Tasks accessing such an object interact with each other indirectly through the object.
+An access to the protected object can be:
+Lock-free, when the task accessing the object is not blocked for a considerable time;
+Blocking, otherwise.
+
+Blocking objects can be used for task synchronization. To the examples of such objects belong:
+Events;
+Mutexes and semaphores;
+Waitable timers;
+Queues
+
+
+Synchronization in Python :-
+Locks:
+Locks are perhaps the simplest synchronization primitives in Python. A Lock has only two states — locked and unlocked (surprise). It is created in the unlocked state and has two principal methods — acquire() and release(). The acquire() method locks the Lock and blocks execution until the release() method in some other co-routine sets it to unlocked.
+R-Locks:
+R-Lock class is a version of simple locking that only blocks if the lock is held by another thread. While simple locks will block if the same thread attempts to acquire the same lock twice, a re-entrant lock only blocks if another thread currently holds the lock.
+Semaphore:
+A semaphore has an internal counter rather than a lock flag, and it only blocks if more than a given number of threads have attempted to hold the semaphore. Depending on how the semaphore is initialized, this allows multiple threads to access the same code section simultaneously.</p>
+		<a href="https://en.wikipedia.org/wiki/Concurrent_computing" class="design-name" target="_blank">Concurrent Programming Paradigm</a>
 		<li>
 						<a href="https://en.wikipedia.org/wiki/Functional_programming" class="design-name" target="_blank">Functional Programming Paradigm</a>
 					</li>					<li>
