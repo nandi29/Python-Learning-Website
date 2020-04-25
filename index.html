@@ -409,25 +409,25 @@ An access to the protected object can be:</p>
                                                                                  <li>
 						<h4>Network Programming Paradigm</h4>
 					</li>				
-<p>A programming language provides abstractions and ways to compose those abstractions.The programming languages you are familiar with are models of computer systems.They provide abstractions for data and computation.
-The Network paradigm involves thinking of computing in terms of a client, who is essentially in need of some type of information, and a server, who has lots of information and is just waiting to hand it out. Typically, a client will connect to a server and query for certain information. The server will go off and find the information and then return it to the client.
-In the context of the Internet, clients are typically run on desktop or laptop computers attached to the Internet looking for information, whereas servers are typically run on larger computers with certain types of information available for the clients to retrieve. The Web itself is made up of a bunch of computers that act as Web servers; they have vast amounts of HTML pages and related data available for people to retrieve and browse. Web clients are used by those of us who connect to the Web servers and browse through the Web pages.
-Network programming uses a particular type of network communication known as sockets. A socket is a software abstraction for an input or output medium of communication.</p>
-<p>Socket:</p>
+<p>A programming language provides abstractions and ways to compose those abstractions.The programming languages you are familiar with are models of computer systems.They provide abstractions for data and computation.</p>
+<p>The <mark>Network paradigm involves thinking of computing in terms of a client</mark>, who is essentially in need of some type of information, and a server, who has lots of information and is just waiting to hand it out. Typically, a client will connect to a server and query for certain information. The server will go off and find the information and then return it to the client.
+In the context of the Internet, clients are typically run on desktop or laptop computers attached to the Internet looking for information, whereas servers are typically run on larger computers with certain types of information available for the clients to retrieve. The Web itself is made up of a bunch of computers that act as Web servers; they have vast amounts of HTML pages and related data available for people to retrieve and browse. Web clients are used by those of us who connect to the Web servers and browse through the Web pages.</p>
+<p>Network programming uses a particular type of network communication known as <mark>sockets</mark>. A socket is a software abstraction for an input or output medium of communication.</p>
+<p><mark>Socket</mark>:</p>
 <u1 style="list-style-type:circle;">
 	<li>A socket is a software abstraction for an input or output medium of communication.</li>
 	<li>Sockets allow communication between processes that lie on the same machine, or on different machines working in diverse environment and even across different continents.</li>
 	<li>A socket is the most vital and fundamental entity. Sockets are the end-point of a two-way communication link.</li>
 	<li>An endpoint is a combination of IP address and the port number.</li>
 </u1>
-<p>For Client-Server communication</p>
+<p><mark>For Client-Server communication</mark></p>
 <u1 style="list-style-type:circle;">
 	<li>Sockets are to be configured at the two ends to initiate a connection</li>
 	<li>Listen for incoming messages</li>
 	<li>Send the responses at both ends</li>
 	<li>Establishing a bidirectional communication.</li>
 </u1>
-<p>Socket Types</p>
+<p><mark>Socket Types</mark></p>
 <u1 style="list-style-type:circle;">
 	<li>Datagram Socket:
 A datagram is an independent, self-contained piece of information sent over a network whose arrival, arrival time, and content are not guaranteed. A datagram socket uses User Datagram Protocol (UDP) to facilitate the sending of datagrams (self-contained pieces of information) in an unreliable manner. Unreliable means that information sent via datagrams isn't guaranteed to make it to its destination.</li>
