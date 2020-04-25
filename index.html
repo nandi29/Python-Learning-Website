@@ -365,8 +365,27 @@ An access to the protected object can be:</p>
 	</p>
 <a href="https://en.wikipedia.org/wiki/Logic_programming" class="design-name" target="_blank">Logic Programming Paradigm</a>
                                                                                 <li>
-						<a href="https://en.wikipedia.org/wiki/Dependent_type" class="design-name" target="_blank">Dependent Programming Paradigm</a>
-					</li>					<li>
+						<h4>Dependent Programming Paradigm</h4>
+					</li>				
+<p>In computer science and logic, a dependent type is a type whose definition <mark>depends on a value</mark>. It is an overlapping feature of type theory and type systems. In intuitionistic type theory, dependent types are used to encode logic's quantifiers like "for all" and "there exists". In functional programming languages like Agda, ATS, Coq, F*, Epigram, and Idris, dependent types may help reduce bugs by enabling the programmer to assign types that further restrain the set of possible implementations.</p>
+<p>Two common examples of <mark>dependent types</mark> are: dependent functions and dependent pairs.</p> 
+<p>The return type of a dependent function may depend on the value (not just type) of one of its arguments. For instance, a function that takes a positive integer where the array length is part of the type of the array. A dependent pair may have a second value of which the type depends on the first value. Sticking with the array example, a dependent pair may be used to pair an array with its length in a type-safe way.</p>
+<p>Dependent types add complexity to a type system. Deciding the equality of dependent types in a program may require computations. If arbitrary values are allowed in dependent types, then deciding type equality may involve deciding whether two arbitrary programs produce the same result; hence type checking may become undecidable.</p>
+
+<p>A constant problem:</p>
+<u1 style="list-style-type:circle;">
+	<li>Writing a correct computer program is hard and proving that a program is correct is even harder</li>
+	<li>Dependent Types allow us to write programs and know they are correct before running them.</li>
+	<li>dependent types: you can specify types that can check the value of your variables at compile time</li>
+</u1>
+<p>In computer science and logic, a dependent type is a type whose definition depends on a value.</p>
+<p>It is an overlapping feature of type theory and type systems.</p>
+<p>Used to encode logic's quantifiers like "for all" and "there exists".</p>
+<p>Dependent types may help reduce bugs by enabling the programmer to assign types that further restrain the set of possible implementations.</p>
+<p>for reference-
+	</p>
+<a href="https://en.wikipedia.org/wiki/Dependent_type" class="design-name" target="_blank">Dependent Programming Paradigm</a>
+                                                                                 <li>
 						<a href="https://www.inf.usi.ch/faculty/soule/teaching/2015-fall/netpl/lecture01-introduction.pdf" class="design-name" target="_blank">Network Programming Paradigm</a>
 					</li>					<li>
 						<a href="https://en.wikipedia.org/wiki/Symbolic_programming" class="design-name" target="_blank">Symbolic Programming Paradigm</a>
